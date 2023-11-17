@@ -25,7 +25,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 9rem 7rem 7rem 7rem;
 }
 
 .left_cont h1{
@@ -33,12 +32,13 @@ body{
     font-size: 3.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #572682;
-    align-self: center;
 }
 
 .left_cont p{
     color: rgb(230, 0, 126);
     font-size: 1.5rem;
+    padding: 0 5rem;
+    
 }
 
 
@@ -337,9 +337,10 @@ img{
  }
  
  .nav-top .icon-cont{
-    height: 15vh ;
-    width: 25%;
+    height: 8vh ;
+    width: 16.5%;
     overflow: hidden;
+    
 
  }
  .nav-top .icon-cont img{
@@ -348,22 +349,26 @@ img{
  }
  
  .nav-top .nav-links{
-    height: 15vh;
+    height: 10vh;
     width: 55%;
     background-color: #fff;
-    padding: 2.5rem;
+    /* padding: 2.5rem; */
     border-radius: 60px;
-    opacity: 0.9;
+    opacity: 1;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
  }
  .nav-top .nav-links ul{
    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0;
  }
 
  .nav-top .nav-links ul li a{
@@ -371,7 +376,6 @@ img{
     color:  #572682;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: all 2s;
  }
 
  .faq-cont{
@@ -401,10 +405,12 @@ img{
 .faq-cont .transparent {
    width: 70%;
    border-bottom: 1px solid #572682;
+   
 }
 
 .faq-cont .transparent p{
-   padding: .8rem 0;
+   padding: .8rem 0.2rem;
+   font-size: 1rem;
 }
 
 .faq-cont .transparent .combine{
@@ -417,10 +423,18 @@ img{
    cursor: pointer;
 }
 
+.faq-cont .transparent .combine p{
+   font-size: 1.125rem;
+}
+
+.faq-cont .transparent .combine i{
+   opacity: .5;
+}
+
 
 @media (max-width: 1556px){
-   .nav-top .nav-links{
+   /* .nav-top .nav-links{
       padding: 1.5rem;
    }
-   
+    */
 }
