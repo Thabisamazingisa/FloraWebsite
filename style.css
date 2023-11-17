@@ -17,7 +17,7 @@ body{
     
 }
 
-.left_cont{
+.upper_container .left_cont{
     height: 100vh;
     width: 50%;
     background: rgb(255, 255, 255);
@@ -25,16 +25,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
 }
 
-.left_cont h1{
+.upper_container .left_cont h1{
     text-transform: capitalize;
     font-size: 3.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #572682;
 }
 
-.left_cont p{
+.upper_container .left_cont p{
     color: rgb(230, 0, 126);
     font-size: 1.5rem;
     padding: 0 5rem;
@@ -42,7 +43,7 @@ body{
 }
 
 
-.right_cont{
+.upper_container .right_cont{
     height: 100vh;
     width: 50%;
     background-image: url('images/proteas_3.png');
@@ -354,7 +355,7 @@ img{
     background-color: #fff;
     /* padding: 2.5rem; */
     border-radius: 60px;
-    opacity: 1;
+    opacity: .8;
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -432,9 +433,11 @@ img{
 }
 
 
-@media (max-width: 1556px){
-   /* .nav-top .nav-links{
-      padding: 1.5rem;
-   }
-    */
+.phone{
+   height: 200vh;
+   width: 100%;
+   background-image: url('images/telephone-call.gif');
+   background-repeat: no-repeat;
+   background-attachment:local;
+   background-size: cover;
 }
