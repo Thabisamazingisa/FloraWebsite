@@ -237,11 +237,14 @@ img{
     justify-content: center;
     align-items: center;
     color: var(--lightgreen);
+    transition: all .3s;
     
  }
  .separate-divs .first-div:hover{
    background: var(--lightgreen);
    color: var(--green); 
+   width: 26%;
+   height: 76%;
  }
 
 
