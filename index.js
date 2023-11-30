@@ -24,8 +24,8 @@ function scroller() {
 
 
 $('.faq-qa-cont').click(function(){
-    $(this).find('faq-answer').slideToggle();
-    $(this).find('faq-question i').toggleClass('icon-rotate');
+    $(this).find('.faq-answer').slideToggle();
+    $(this).find('.faq-question i').toggleClass('icon-rotate');
     console.log('clicked')
 })
 
