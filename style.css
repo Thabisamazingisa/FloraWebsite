@@ -629,9 +629,9 @@ img {
 }
 
 footer {
-  height: 15vh;
+  padding: 1rem 0;
   width: 100%;
-  background: var(--light);
+  background: #fff;
   display: flex;
   justify-content: space-around;
   /* padding: 0 4rem; */
@@ -640,7 +640,7 @@ footer {
 }
 
 footer .image-logo {
-  height: 9vh;
+  /* height: 9vh; */
   width: 13%;
 }
 
