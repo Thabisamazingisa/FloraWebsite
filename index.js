@@ -1,8 +1,5 @@
-var accordion = document.getElementById('accordion');
-var trans = document.getElementById('trans')
-var accord_class  = accordion.classList
-var nav = document.getElementById('nav'); 
-var lastScrollY = window.scrollY; 
+// var nav = document.getElementById('nav'); 
+// var lastScrollY = window.scrollY; 
 
 $(window).ready(function (e) {
     let scroll_pos = $(window).scrollTop();
@@ -17,7 +14,7 @@ $(window).on("scroll", function () {
 
 function scroller() {
     if ($(window).scrollTop() > 100) {
-        $('#nav').removeClass('hide-nav').addClass('show-nav').css('background', '#ffff');
+        $('#nav').removeClass('hide-nav').addClass('show-nav').css('background', '#fff');
         $('#to-top').addClass('show').removeClass('hide');
     } else {
         $('#nav').removeClass('hide-nav').addClass('show-nav').css('background', 'transparent');
@@ -26,9 +23,15 @@ function scroller() {
 }
 
 
+$('.faq-qa-cont').click(function(){
+    $(this).find('faq-answer').slideToggle();
+    $(this).find('faq-question i').toggleClass('icon-rotate');
+    console.log('clicked')
+})
+
+
 $('#to-top').on('click', function () {
     smoothScroll()
-
 });
 
 $(".nav-link").on('click', function (e) {
@@ -59,8 +62,6 @@ function smoothScroll() {
 //     lastScrollY = window.scrollY;
 // })
 
-trans.addEventListener('click', ()=>{
-    accord_class.toggle('accordion') ;   
-})
+
 
 
