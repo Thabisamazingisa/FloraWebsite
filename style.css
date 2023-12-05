@@ -322,7 +322,7 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--lightgreen);
+  color: #fff;
   transition: all 0.3s;
   cursor: pointer;
 }
