@@ -10,9 +10,11 @@
   --light: #f9ecc9;
 }
 
-::placeholder {
+::-webkit-input-placeholder{
   color: var(--lightgreen);
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -52,6 +54,20 @@ body {
   color: var(--brown);
   margin-bottom: 1rem;
   font-family: "Birthstone", cursive;
+  animation-name: text-example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes text-example{
+  from {
+          color: var(--brown);
+          font-size:5.9rem
+        }
+  to {
+        color: var(--orange);
+        font-size: 6rem;
+      }
 }
 
 .upper_container .left_cont p {
@@ -245,7 +261,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   z-index: -1;
-  margin: 0;
+  margin: 1rem;
 }
 
 img {
@@ -296,7 +312,7 @@ img {
 }
 
 .cards .single-card {
-  padding: 5rem 1rem;
+  padding: 7rem 1rem;
   width: 27%;
   background: var(--green);
   border-radius: 20px;
@@ -334,7 +350,7 @@ img {
 .cards .single-card:hover {
   background: var(--lightgreen);
   color: var(--green);
-  width: 28%;
+  transform: scale(1.02);
   
 }
 
@@ -493,6 +509,7 @@ img {
   font-size: 1.125rem;
 }
 
+
 .faq-cont .faq-qa-cont .faq-question i {
   color: var(--orange);
   transition: .3s;
@@ -522,6 +539,7 @@ img {
   color: var(--lightgreen);
   font-size: 3.5rem;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .contacts form {
@@ -666,3 +684,16 @@ footer .footer-icons i {
 footer .footer-icons i:hover {
   transform: translateY(-3px);
 }
+
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--orange);
+}
+
+::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+

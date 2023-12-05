@@ -23,10 +23,9 @@ function scroller() {
 }
 
 
-$('.faq-qa-cont').click(function(){
+$('.faq-qa-cont').on( 'click',function(){
     $(this).find('.faq-answer').slideToggle();
     $(this).find('.faq-question i').toggleClass('icon-rotate');
-    console.log('clicked')
 })
 
 
@@ -46,7 +45,7 @@ $(".nav-link").on('click', function (e) {
     });
 });
 
-function smoothScroll() {
+const smoothScroll=()=> {
     $('html, body').animate({
         scrollTop: $('html, body').offset().top,
     }, 800);
